@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Đăng kí du lịch</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table table-warning table-bordered">
+
+            <tbody>
+              <tr>
+                <th scope="row">Họ và Tên</th>
+                <td><input type="text" class="form-control" id="hoten" value="Phạm Ngọc Cẩm Đào" required></td>
+              </tr>
+              <tr>
+                <th scope="row">Địa chỉ</th>
+                <td><input type="text" class="form-control" id="diachi" value="227 Nguyễn Văn Cừ" required></td>
+              </tr>
+              <tr>
+                <th scope="row">Điện thoại</th>
+                <td><input type="tel" class="form-control" pattern="[0-9]{10}" id="sdt" value="8351056" required></td>
+              </tr>
+              <tr>
+                <th scope="row">Khách Việt Nam</th>
+                <td><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="khachvn">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      
+                    </label>
+                  </div></td>
+              </tr>
+              <tr>
+                <th scope="row">Chọn tour</th>
+                <td><select class="form-select" aria-label="Default select example">
+                    <option selected>Chọn tour</option>
+                    <option value="1">Buôn Mê Thuột - Gia Lai- Kontum</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th scope="row">Phương tiện</th>
+                <td><div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="ptmaybay">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Máy bay
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="ptoto" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Xe ô tô
+                    </label>
+                  </div></td>
+              </tr>
+              <tr>
+                <th scope="row">Số lượng đoàn khách</th>
+                <td>Jacob</td>
+              </tr>
+              <tr>
+                <th scope="row">Ghi chú</th>
+                <td><input type="text" class="form-control" id="ghichu" value="Mark" required></td>
+              </tr>
+              <tr>
+                <th scope="row"><button id="dongy"> Đồng ý</button></th>
+                <th scope="row"><button id="reset"> Reset</button></th>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
